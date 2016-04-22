@@ -1,0 +1,129 @@
+/* -------------------------------------------------------------
+	© IceTheme 2013
+---------------------------------------------------------------- */
+
+/* 
+DO NOT DELETE THIS LINE
+Necessary to check if StyleSheet has loaded  */
+#dummy-element{width:2px;} 
+
+
+/* general.css */
+body {
+	background-color: #d4cdcb;
+	background-image:url(../../images/styles/style4/content.png);}
+	
+#header {
+	background-color:#773D18;
+	background-image:url(../../images/styles/style4/header.png);}
+	
+#content_wraper #mainmenu {background-color:#b66048;}
+
+#content_wraper #mainmenu:before,
+#content_wraper #mainmenu:after { background-image:url(../../images/styles/style4/menu_before_after.png);}
+	
+#donate {
+	background-color:#f0ecea;
+	border-color:#e0d8d3;}
+	
+#donate:before,
+#donate:after {
+	background-image:url(../../images/styles/style4/donate_stars.png);}	
+
+.donate_top .btn-donate {background-color:#d0907a;}
+.donate_top .btn-donate:hover {background-color:#DEB0A0;}
+	
+a:link { color:#A45641}
+
+#footer {
+	background-color:#79401A;
+	background-image:url(../../images/styles/style4/footer.png);}
+	
+#footer #message {border-bottom-color:#976337;}
+#footer #message:after { background-image:url(../../images/styles/style4/footer_stars.png);}
+	
+.scrollup { background-color:rgba(182, 96, 72,.5);}
+
+#copyright_area { border-top-color:#976337;}
+
+p#icelogo a { background-image:url(../../images/styles/style4/icetheme.png)}
+
+body .btn { background-color: #B66048;}
+body .btn:hover { background-color:#B66048;}
+
+.tooltip-inner { background:#B66048}
+.tooltip.bottom .tooltip-arrow { border-bottom-color:#B66048}
+.tooltip.top .tooltip-arrow    { border-top-color:#B66048}
+.tooltip.left .tooltip-arrow   { border-left-color:#B66048}
+.tooltip.right .tooltip-arrow  { border-right-color:#B66048}
+
+
+/* default_icemegamenu.css */
+.icemegamenu > ul > li:hover > a.iceMenuTitle span.icemega_title,
+.icemegamenu > ul > li.active > a.iceMenuTitle span.icemega_title {background-color:#99503C;}
+	
+ul.icesubMenu {
+	background-color:#99503C;
+	background:rgba(148, 77, 58,.94);}
+	
+		
+.icesubMenu .icemega_cover_module form#login-form .input-prepend .add-on {background-color:#D38C7C;}	
+	
+
+	
+/* modules.css */	
+#categories .ice_filter_img {
+	background-color:#f0ecea;
+	background:linear-gradient(to bottom right, #e0d8d3 0%, #e0d8d3 50%, #f0ecea 50.01%, #f0ecea 100%);}
+	
+#categories .ice_filter_caption h4 a:hover {background-color:#B66048;}
+	
+#icecarousel {
+	border-top-color:#e0d8d3;
+	border-bottom-color:#e0d8d3;}
+	#icecarousel:before,
+	#icecarousel:after {background-color:#f0ecea;}
+#icecarousel .icecarousel-inner { 
+	border-color:#e0d8d3;
+	background-color:#f0ecea; }
+#icecarousel .flex-direction-nav a { background-image:url(../../images/styles/style4/icecarousel_arrows.png);}
+#icecarousel .icecarousel-caption .icecarousel-description { background-color:#DB988A;}
+#icecarousel .icecarousel-inner { border-color:#E7E0DE; }
+#icecarousel .icecarousel-inner:hover .icecarousel-caption { background: #F1EEED;}
+
+#iceslideshow .carousel-caption h4 { color: #B65F47;}
+#iceslideshow .iceslideshow_arrow a:after {background-image: url(../../images/styles/style4/iceslideshow_arrows.png);}
+#iceslideshow .carousel-caption div.mod-description a { color:#B65F47}
+#iceslideshow .ice_overlay { background-image: url(../../images/styles/style4/loading.gif);}
+
+#sidebar .sidebar_module h3.sidebar_module_heading {background-color:#B66048;}
+#sidebar .sidebar_module h3.sidebar_module_heading:after {background-image:url(../../images/styles/style4/mod_heading.png);}
+	
+#sidebar .sidebar_module {background-color:#f8f1eb;}
+
+#sidebar .sidebar_module_style1 h3.sidebar_module_heading { background-color:#7B421B}
+				
+#sidebar .sidebar_module_style2 { background-color:#B66048;}
+		
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading{ 
+	background-color:#d0907a;
+	background:-moz-linear-gradient(left, #d69d89 0%,#c272ba 30%, #d0907a 70%, #d69d89 100%);
+	background:-webkit-linear-gradient(left, #d69d89 0%,#d0907a 30%, #d0907a 70%, #d69d89 100%);
+	background:-o-linear-gradient(left, #d69d89 0%,#d0907a 30%, #d0907a 70%, #d69d89 100%);
+	background:linear-gradient(left, #d69d89 0%,#d0907a 30%, #d0907a 70%, #d69d89 100%);}
+			
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading:after,
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading:before {border-left-color: #B66048;} 
+
+#sidebar .sidebar_module_style3 { background-color:#f8f1eb;}
+
+	
+/* joomla.css */
+#sidebar .sidebar_module ul.menu li a {
+	border-bottom-color:#EAD7C5;}
+			
+#sidebar .sidebar_module ul.menu li a:hover,
+#sidebar .sidebar_module ul.menu li.active a {
+	background-color:#F1E4D8;}	
+	
+ul.breadcrumb li:first-child a { background-image:url(../../images/styles/style4/breadcrumbs_home.png);	

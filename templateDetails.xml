@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site">
+        <name>Memory08</name>
+        <creationDate>16.03.2015</creationDate>
+        <author>Akcium</author>
+        <authorEmail>artas2014@mail.ru</authorEmail>
+        <authorUrl>http://google.ru/</authorUrl>
+        <copyright>Artas/Akcium 2015</copyright>
+        <license>GNU/GPL</license>
+        <version>1.0.0</version>
+        <description><![CDATA[Создано по инструкции блога о создании и продвижении сайтов: <a target="_blank" href="http://site-on.net/">Site on!</a>]]></description>
+        <files>
+                <filename>index.php</filename>
+                <filename>index.html</filename>
+                <filename>templateDetails.xml</filename>
+                <filename>style.css</filename>
+                <filename>template.css</filename>
+  				<folder>images</folder>
+                <folder>html</folder>
+				
+        </files>
+        <positions>	
+		<position>upper-footer</position>
+		<position>footer-low</position>
+		<position>footer-right</position>
+		<position>footer-left</position>
+		<position>header_right</position>			
+                <position>top-menu</position>
+		<position>video</position>
+                <position>left-column</position>
+                <position>right-column</position>
+                <position>footer</position>
+	        <position>alfaindex</position> 
+	        <position>mobileheroes</position>
+		<position>slider</position>                                    
+        </positions>
+</extension>

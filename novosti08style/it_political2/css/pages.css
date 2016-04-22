@@ -1,0 +1,92 @@
+/* -------------------------------------------------------------
+	© IceTheme 2013
+---------------------------------------------------------------- */
+
+
+/* ---------------------- pages.css --------------------------
+
+This CSS file contains the styles for the 
+About Us, FAQ, Testimonials, Portfolio and Services.
+---------------------------------------------------------------- */
+
+
+
+/* About Us 
+**************/
+body.page-about {}
+
+	body.page-about blockquote  {
+		clear:both;
+		margin-top:30px;
+		margin-bottom:30px}
+		
+		body.page-about blockquote p {
+			font-size:0.90em;
+			line-height:1.7em;}
+	
+	body.page-about .page-team {
+		width:30%;
+		text-align:center;
+		padding:0 1.5%;
+		float:left;
+		margin:25px 0}	
+		
+		body.page-about .page-team h4 {
+			margin: 0 0 4px;
+			text-align:center;}
+		
+		body.page-about .page-team em {
+			text-align: center;
+			display: block;
+			color: #999;
+			margin-bottom: 10px;}
+
+/* Services
+**************/
+body.page-services {}
+
+	body.page-services .page-service {
+		width:30%;
+		padding:0 1.5%;
+		float:left;
+		margin:15px 0}	
+		
+		body.page-services .page-service h4 {
+			margin-bottom:8px}
+			
+		
+		body.page-services .page-service img {
+			margin:5px 10px 5px 0;
+			float:left}
+		
+		
+	body.page-services blockquote  {
+		clear:both;
+		margin-top:40px;
+		margin-bottom:25px}
+		
+		body.page-services blockquote p {
+			font-size:0.9em;
+			line-height:1.7em;}
+
+
+/* Testimonials
+**************/
+body.page-testimonials {}
+
+	body.page-testimonials blockquote  {
+		clear:both;
+		margin-top:60px;
+		margin-bottom:10px}
+		
+		body.page-testimonials blockquote p {
+			font-size:1.2em;
+			line-height:2em;}
+						
+		body.page-testimonials em {
+			font-size:0.9em;
+			color:#777;
+			font-style:normal;
+			padding-left:79px;
+			margin-bottom:30px;}
+			

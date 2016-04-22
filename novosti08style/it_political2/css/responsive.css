@@ -1,0 +1,192 @@
+/* -------------------------------------------------------------
+	© IceTheme 2013
+---------------------------------------------------------------- */
+#sidebar{margin-left:0px;width:300px;position:relative;}
+#banners
+{
+    background-color: #ebedf0;
+display:inline-block;
+min-width:200px;
+min-height:600px;
+width:252px;
+float:right;
+padding:0px;
+    margin: 0px 0 0;
+position:relative;
+ /*left: -15px; */
+}
+#banners p:last-child:{margin-bottom:0px;} 
+/*#content_inner .row{text-align:center;}*/
+/* Large desktop */
+@media (min-width: 1200px) {
+        .row {
+    margin-left: 0px;
+}
+	#iceslideshow .iceslideshow_arrow { left:36%; }
+	#iceslideshow .carousel-caption h4 { padding-top:100px;}
+	#style_line{display:block;}
+	.footer_mid iframe 
+	{
+width:853px; height:480px;
+	}
+}
+
+
+/* Smaller than Large Desktop */
+@media (max-width: 1200px) {
+             .row {
+    margin-left: 0px;
+}
+	
+
+#sidebar {
+    margin-left: 0px;
+    width: 239px;
+}
+div.mainmenu{width:1000px;}
+#header #right_top {display:none;}
+	.weather{display:none;}	
+	.weather1{display:inline-block;}
+#banners{width:200px;}
+.footer_mid iframe {width:853px; height:480px; }
+.leftbar { width: 183px;}
+
+}
+
+/* landscape tablet and desktop */
+@media (max-width: 979px) {
+.footer_mid iframe {
+    height: 360px;
+    width: 640px;
+}
+#sidebar{
+    margin-left: 0px;
+    width:55%;
+}
+         
+.leftbar {
+    width: 93.01%;
+}
+		.span8 {width:95%;}
+	#header { }
+		#header #statistics { margin-top:15px}
+		#header #right_top { margin-top:15px}
+	div.mainmenu{width:auto;}
+	#content { margin-top: 0px; }
+	
+	.donate_top { position:absolute; top:0; right:0}
+	
+	#social_icons { float:left; clear:both; margin:15px 0 5px;}
+	
+	#iceslideshow .carousel-caption h4 { padding-top:20px;}
+	#iceslideshow .carousel-caption .mod-description { width:95%; right:-100%;}
+	#iceslideshow .iceslideshow_arrow { top:95%; left:42%}
+
+
+	.weather1{display:none;}	
+	.weather2{display:inline-block;}
+	.widjets{}	
+}
+
+
+	
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#sidebar{
+    margin-left: 0px;
+    width:55%;
+}
+
+	.footer_mid iframe {
+    height: 290px;
+    width: 520px;
+}
+	#header,
+	#footer { /*margin-left:-20px; margin-right:-20px; padding-left:20px; padding-right:20px;*/}
+	#footer .container {max-width:95%;}
+	#header #statistics {position:absolute;}
+
+	#header { height:auto}
+		#header #statistics { margin-top: 0px; text-align: center;}
+		#header #right_top { margin-bottom:18px; text-align:center}
+			#header #language { display:inline-block; float:none}
+			#header #topmenu { display:inline-block; float:none}
+		
+	#content {  max-width: 100%;margin-top:0; margin-bottom:0}
+
+	#footer { padding-top:25px}
+			
+	#iceslideshow .carousel-caption { position:static;}
+		#iceslideshow .carousel-caption .mod-description { position:relative; right:0}	
+	#iceslideshow .iceslideshow_arrow { top:15%}	
+	
+	#donate { padding:0 12px; margin:0 0 20px;}
+		#donate:before, #donate:after { display:none}
+		
+	#icecarousel .flexslider:hover .flex-prev { left:-35px;}	
+	#icecarousel .flexslider:hover .flex-next { right:-35px;}
+			
+	.items-row div.img {
+		display:inline-block}	
+		
+	#footer #message:after { display:none}	
+	#widjets_social{ 
+	position:absolute;    
+	right: 12px;
+    	top: 3px;}
+	.widjets{height:87px;}
+	.just_title{display:none;}
+	
+	#content_wraper {width:100%;}	
+        #content_inner {max-width:100%;}
+        .span8 
+	{
+    	width: 100%;
+	}
+	body {
+   	padding-left:0px;
+   	padding-right:0px;
+	}
+	#content_inner  .row{max-width:100%; margin-right:0px;}
+         .pagination {width:100%;}
+	#content_wraper #mainmenu:before, #content_wraper #mainmenu:after {width:30px; height:73px;	background-image:url(../images/styles/style1/menu_before_after_final2.png);}
+          #content_wraper #mainmenu:after {
+   	 background-position: right center;
+   	 right: -15px;
+	}
+
+	#content_wraper #mainmenu:before {
+	 left:  -15px;
+	}
+
+
+
+}
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	
+	.scrollup {
+		clear: both;
+		-webkit-transform:scale(.75);
+		-moz-transform: scale(.75);
+		-o-transform: scale(.75);
+		-ms-transform: scale(.75);
+		transform: scale(.75);
+		bottom:-12px;
+		left:45%;
+		display: block!important;
+		position:relative!important;}
+	
+	ul#ice-switcher { display:none}
+	
+	body.offline_page .inputbox { width:auto}
+	
+	#search form .inputbox { width:auto}
+
+}

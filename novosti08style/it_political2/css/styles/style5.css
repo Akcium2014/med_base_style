@@ -1,0 +1,236 @@
+/* -------------------------------------------------------------
+	© IceTheme 2013
+---------------------------------------------------------------- */
+
+/* 
+DO NOT DELETE THIS LINE
+Necessary to check if StyleSheet has loaded  */
+#dummy-element{width:2px;} 
+
+
+/* general.css */
+body {
+	background-color: #d2c9d1;
+	background-image:url(../../images/styles/style5/content.png);}
+	
+#header {
+	background-color:#691547;
+	background-image:url(../../images/styles/style5/header.png);}
+	
+#content_wraper #mainmenu {background-color:#a03f95;}
+
+#content_wraper #mainmenu:before,
+#content_wraper #mainmenu:after { background-image:url(../../images/styles/style5/menu_before_after.png);}
+	
+#donate {
+	background-color:#f0e6ed;
+	border-color:#ded1d9;}
+	
+#donate:before,
+#donate:after {
+	background-image:url(../../images/styles/style5/donate_stars.png);}	
+
+.donate_top .btn-donate {background-color:#c272ba;}
+.donate_top .btn-donate:hover {background-color:#D296CC;}
+	
+a:link { color:#931D63}
+
+#footer {
+	background-color:#6c174a;
+	background-image:url(../../images/styles/style5/footer.png);}
+	
+#footer #message {border-bottom-color:#892f6a;}
+#footer #message:after { background-image:url(../../images/styles/style5/footer_stars.png);}
+	
+.scrollup { background-color:rgba(160, 63, 149,.5);}
+
+#copyright_area { border-top-color:#892f6a;}
+
+p#icelogo a { background-image:url(../../images/styles/style5/icetheme.png)}
+
+body .btn { background-color: #A03F95;}
+body .btn:hover { background-color:#BC55B1;}
+
+.tooltip-inner { background:#A03F95}
+.tooltip.bottom .tooltip-arrow { border-bottom-color:#A03F95}
+.tooltip.top .tooltip-arrow    { border-top-color:#A03F95}
+.tooltip.left .tooltip-arrow   { border-left-color:#A03F95}
+.tooltip.right .tooltip-arrow  { border-right-color:#A03F95}
+
+
+/* default_icemegamenu.css */
+.icemegamenu > ul > li:hover > a.iceMenuTitle span.icemega_title,
+.icemegamenu > ul > li.active > a.iceMenuTitle span.icemega_title {background-color:#803276;}
+	
+ul.icesubMenu {
+	background-color:#803276;
+	background:rgba(128, 50, 118,.94);}
+	
+	
+.icesubMenu .icemega_cover_module form#login-form .input-prepend .add-on {background-color:#C272BF;}	
+	
+	
+	
+/* modules.css */	
+#categories .ice_filter_img {
+	background-color:#f0e6ed;
+	background:linear-gradient(to bottom right, #ded1d9 0%, #ded1d9 50%, #f0e6ed 50.01%, #f0e6ed 100%);}
+	
+#categories .ice_filter_caption h4 a:hover {background-color:#A03F95;}
+	
+#icecarousel {
+	border-top-color:#ded1d9;
+	border-bottom-color:#ded1d9;}
+	#icecarousel:before,
+	#icecarousel:after {background-color:#f0e6ed;}
+#icecarousel .icecarousel-inner { 
+	border-color:#DCE0E5;
+	background-color:#fdfefc; }
+#icecarousel .flex-direction-nav a { background-image:url(../../images/styles/style5/icecarousel_arrows.png);}
+#icecarousel .icecarousel-caption .icecarousel-description { background-color:#CB80C9;}
+#icecarousel .icecarousel-inner { border-color:#E5DCE3; }
+#icecarousel .icecarousel-inner:hover .icecarousel-caption { background: #F0ECEF;}
+
+#iceslideshow .carousel-caption h4 { color: #A03F95;}
+#iceslideshow .iceslideshow_arrow a:after {background-image: url(../../images/styles/style5/iceslideshow_arrows.png);}
+#iceslideshow .carousel-caption div.mod-description a { color:#931D63}
+#iceslideshow .ice_overlay { background-image: url(../../images/styles/style5/loading.gif);}
+		
+#sidebar .sidebar_module h3.sidebar_module_heading {background-color:#A03F95;}
+#sidebar .sidebar_module h3.sidebar_module_heading:after {background-image:url(../../images/styles/style5/mod_heading.png);}
+	
+#sidebar .sidebar_module {background-color:#f6eaee;}
+
+#sidebar .sidebar_module_style1 h3.sidebar_module_heading { background-color:#691547}
+				
+#sidebar .sidebar_module_style2 { background-color:#A03F95;}
+		
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading{ 
+	background-color:#c272ba;
+	background:-moz-linear-gradient(left, #c980c2 0%,#c272ba 30%, #c272ba 70%, #c980c2 100%);
+	background:-webkit-linear-gradient(left, #c980c2 0%,#c272ba 30%, #c272ba 70%, #c980c2 100%);
+	background:-o-linear-gradient(left, #c980c2 0%,#c272ba 30%, #c272ba 70%, #c980c2 100%);
+	background:linear-gradient(left, #c980c2 0%,#c272ba 30%, #c272ba 70%, #c980c2 100%);}
+			
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading:after,
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading:before {border-left-color: #A13F95;} 
+
+#sidebar .sidebar_module_style3 { background-color:#f6eaee;}
+
+	
+/* joomla.css */
+#sidebar .sidebar_module ul.menu li a {
+	border-bottom-color:#D6CAD1;}
+			
+#sidebar .sidebar_module ul.menu li a:hover,
+#sidebar .sidebar_module ul.menu li.active a {
+	background-color:#E0D7DD;}	
+	
+ul.breadcrumb li:first-child a { background-image:url(../../images/styles/style5/breadcrumbs_home.png);}
+
+
+.go-up, .go-down {
+ display: none;
+ position: fixed;
+ z-index: 9999; 
+ left: 6.0px; 
+ background: #4F4F4F;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ cursor: pointer;
+ color: #fff;
+ text-align: center;
+ font: normal normal 42px/42px sans-serif;
+ text-shadow: 0 1px 2px #000;
+ opacity: .5;
+ padding: 3px;
+ margin-bottom: 5px;
+ width: 42px;
+ height: 42px;
+}
+.go-up { bottom: 80px; }
+.go-down { bottom: 30px; }
+.go-down:hover,
+.go-up:hover {
+ opacity: 1;
+ box-shadow: 0 5px 0.5em -1px #666;
+}
+.sidebar_module_heading span{color:white;}
+a:visited{color:#333333;}
+.blog-featured, .blog{text-align:center;}
+.blog-featured .items-row, .blog .items-row ,.blog-featured .items-leading, .blog .items-leading{text-align:left;}
+.items-more{text-align:left;}
+.published time
+{ 
+background-color: #3a87ad;
+    color: white;
+    display: inline-block;
+	    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 2px 4px;
+	border-radius:3px;
+	}
+
+@media (max-width: 1200px) 
+{
+
+
+
+#banners {
+    width: 330px;
+}
+
+
+}
+
+@media (max-width: 979px) 
+{
+
+
+
+#banners {
+    width: 45%;
+}
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+	{
+	#header .container {padding-top:0px;padding-bottom:0px;}
+	#header .container .span4{padding-top:15px;padding-bottom:15px;}
+	#header #right_top{display:none;}
+.over900{z-index:100;}
+.widjets {text-align:center;}
+
+#header #statistics .search {
+    left: 70px;
+    position: absolute;
+    top: 176.5px;
+    z-index: 900;
+}
+
+#banners {
+    width: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

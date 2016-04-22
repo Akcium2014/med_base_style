@@ -1,0 +1,129 @@
+/* -------------------------------------------------------------
+	© IceTheme 2013
+---------------------------------------------------------------- */
+
+/* 
+DO NOT DELETE THIS LINE
+Necessary to check if StyleSheet has loaded  */
+#dummy-element{width:2px;} 
+
+
+/* general.css */
+body {
+	background-color: #d1d3ca;
+	background-image:url(../../images/styles/style3/content.png);}
+	
+#header {
+	background-color:#506414;
+	background-image:url(../../images/styles/style3/header.png);}
+	
+#content_wraper #mainmenu {background-color:#9ba92e;}
+
+#content_wraper #mainmenu:before,
+#content_wraper #mainmenu:after { background-image:url(../../images/styles/style3/menu_before_after.png);}
+	
+#donate {
+	background-color:#eff0ea;
+	border-color:#d7dbcc;}
+	
+#donate:before,
+#donate:after {
+	background-image:url(../../images/styles/style3/donate_stars.png);}	
+
+.donate_top .btn-donate {background-color:#BEC860;}
+.donate_top .btn-donate:hover {background-color:#C6CF73;}
+	
+a:link { color:#506414}
+
+#footer {
+	background-color:#556918;
+	background-image:url(../../images/styles/style3/footer.png);}
+	
+#footer #message {border-bottom-color:#748730;}
+#footer #message:after { background-image:url(../../images/styles/style3/footer_stars.png);}
+	
+.scrollup { background-color:rgba(108, 127, 42,.5);}
+
+#copyright_area { border-top-color:#748730;}
+
+p#icelogo a { background-image:url(../../images/styles/style3/icetheme.png)}
+
+body .btn { background-color: #9ba92e;}
+body .btn:hover { background-color:#AFBF34;}
+
+.tooltip-inner { background:#AFBF34}
+.tooltip.bottom .tooltip-arrow { border-bottom-color:#AFBF34}
+.tooltip.top .tooltip-arrow    { border-top-color:#AFBF34}
+.tooltip.left .tooltip-arrow   { border-left-color:#AFBF34}
+.tooltip.right .tooltip-arrow  { border-right-color:#AFBF34}
+
+
+/* default_icemegamenu.css */
+.icemegamenu > ul > li:hover > a.iceMenuTitle span.icemega_title,
+.icemegamenu > ul > li.active > a.iceMenuTitle span.icemega_title {background-color:#778123;}
+	
+ul.icesubMenu {
+	background-color:#778123;
+	background:rgba(119,129,35,.94);}
+	
+		
+.icesubMenu .icemega_cover_module form#login-form .input-prepend .add-on {background-color:#646D1E;}	
+	
+	
+	
+/* modules.css */	
+#categories .ice_filter_img {
+	background-color:#eff0ea;
+	background:linear-gradient(to bottom right, #dde0d3 0%, #dde0d3 50%, #eff0ea 50.01%, #eff0ea 100%);}
+	
+#categories .ice_filter_caption h4 a:hover {background-color:#3F76A0;}
+	
+#icecarousel {
+	border-top-color:#dde0d3;
+	border-bottom-color:#dde0d3;}
+	#icecarousel:before,
+	#icecarousel:after {background-color:#eff0ea;}
+#icecarousel .icecarousel-inner { 
+	border-color:#DDDFD8;
+	background-color:#E4E6DF; }
+#icecarousel .flex-direction-nav a { background-image:url(../../images/styles/style3/icecarousel_arrows.png);}
+#icecarousel .icecarousel-caption .icecarousel-description { background-color:#BEC860;}
+#icecarousel .icecarousel-inner { border-color:#DDDFD8; }
+#icecarousel .icecarousel-inner:hover .icecarousel-caption { background: #F5F6F4;}
+
+#iceslideshow .carousel-caption h4 { color: #506414;}
+#iceslideshow .iceslideshow_arrow a:after {background-image: url(../../images/styles/style3/iceslideshow_arrows.png);}
+#iceslideshow .carousel-caption div.mod-description a { color:#931D63}
+#iceslideshow .ice_overlay { background-image: url(../../images/styles/style3/loading.gif);}
+
+#sidebar .sidebar_module h3.sidebar_module_heading {background-color:#97a52b;}
+#sidebar .sidebar_module h3.sidebar_module_heading:after {background-image:url(../../images/styles/style3/mod_heading.png);}
+	
+#sidebar .sidebar_module {background-color:#eff1eb;}
+
+#sidebar .sidebar_module_style1 h3.sidebar_module_heading { background-color:#556918}
+				
+#sidebar .sidebar_module_style2 { background-color:#9ba92e;}
+		
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading{ 
+	background-color:#BEC860;
+	background:-moz-linear-gradient(left, #C2CC66 0%,#BEC860 30%, #BEC860 70%, #C2CC66 100%);
+	background:-webkit-linear-gradient(left, #C2CC66 0%,#BEC860 30%, #BEC860 70%, #C2CC66 100%);
+	background:-o-linear-gradient(left, #C2CC66 0%,#BEC860 30%, #BEC860 70%, #C2CC66 100%);
+	background:linear-gradient(left, #C2CC66 0%,#BEC860 30%, #BEC860 70%, #C2CC66 100%);}
+			
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading:after,
+#sidebar .sidebar_module_style2 h3.sidebar_module_heading:before {border-left-color: #9ba92e;} 
+
+#sidebar .sidebar_module_style3 { background-color:#F6F7F0;}
+
+	
+/* joomla.css */
+#sidebar .sidebar_module ul.menu li a {
+	border-bottom-color:#D6CAD1;}
+			
+#sidebar .sidebar_module ul.menu li a:hover,
+#sidebar .sidebar_module ul.menu li.active a {
+	background-color:#E0D7DD;}	
+	
+ul.breadcrumb li:first-child a { background-image:url(../../images/styles/style3/breadcrumbs_home.png);}	

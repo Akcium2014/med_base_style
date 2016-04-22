@@ -1,0 +1,8 @@
+/* -------------------------------------------------------------
+	© IceTheme 2013
+---------------------------------------------------------------- */
+
+#iceslideshow .carousel-caption { background:none}
+
+#iceslideshow .carousel-caption .mod-description {
+	background:url(../images/iceslideshow_ie.png) repeat!important}
