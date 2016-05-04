@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" dir="ltr">
 <head>
 <jdoc:include type="head" /> 
-<?php JHTML::_('behavior.modal'); ?>    
+    
 <!--
 
 <?php  include_once (JPATH_ROOT.'/templates/'.$this->template.'/head.php');   ?>    -->
@@ -135,6 +135,20 @@ else
 	</div>
  </footer> 
 
+ <div id="modal_container">
+	<div id="modal_container_wrap"> 
+		<div id="sbox-window" role="dialog" aria-hidden="true" style="z-index: 65557;" class="shadow">
+			<div id="sbox-content" style=""></div>
+			<a id="sbox-btn-close" href="#" role="button" aria-controls="sbox-window">X</a>
+			<div id="modal_overlay_wrap"> 
+				<div id="sbox-overlay" aria-hidden="true" style="z-index: 65555; opacity: 0;" tabindex="-1">
+				
+				</div>
+			</div> 
+		</div>
+	</div> 
+	<div id="modal_overlay_wrap1"> </div> 
+ </div>
 <!-- <div id="footer-low"></div>
  <div class="go-up" title="Вверх" id='ToTop'>⇧</div>
  <div class="go-down" title="Вниз" id='OnBottom'>⇩</div> 
@@ -176,13 +190,14 @@ function open_overlay()
 {
   jQuery("#modal_container").css('visibility','visible');
    jQuery("#modal_container > #modal_container_wrap").css('visibility','visible'); 
- 
+ jQuery("body").addClass('body-overlayed');
+  
 }
 function close_overlay()
 {
   jQuery("#modal_container").css('visibility','hidden');
  jQuery("#modal_container > #modal_container_wrap").css('visibility','hidden'); 
- 
+ jQuery("body").removeClass('body-overlayed');
 }
      jQuery(document).ready(function() {
 /*menu_stick();
@@ -190,49 +205,89 @@ create_slider();
 */
 
 
-jQuery('body').append("<div id = 'modal_container' > <div id = 'modal_container_wrap' > </div> <div id = 'modal_overlay_wrap' > </div> </div>");
+
+/*jQuery('body').append("<div id = 'modal_container' > <div id = 'modal_container_wrap' > </div> <div id = 'modal_overlay_wrap' > </div> </div>");
 jQuery('#sbox-window').append("<div id = 'modal_overlay_wrap' > </div> ");
 
 jQuery("#sbox-overlay").appendTo("#modal_overlay_wrap");
-jQuery("#sbox-window").appendTo("#modal_container_wrap");
+jQuery("#sbox-window").appendTo("#modal_container_wrap");*/
 jQuery(".bt-extra").html(function(index, text) {
         return text.replace('Created on', '<span class="icon-calendar"></span>');
     });
-jQuery("#sbox-btn-close").text("X");
+/*jQuery("#sbox-btn-close").text("X");*/
 jQuery('.items-row .page-header h2 a').addClass("modal");
-jQuery(".items-row .page-header h2 a").attr("href", function(i, origValue){
+/*jQuery(".items-row .page-header h2 a").attr("href", function(i, origValue){
   return origValue + "?tmpl=component"; 
-});
-
+});*/
+/*
 SqueezeBox.assign($$('a.modal'), {
     parse: 'rel'
 });
+*/
+
+update_links('a.modal');
 
 jQuery("#sbox-btn-close , #sbox-overlay").on( "click", close_overlay );
-jQuery("a.modal").on( "click", open_overlay );
+
 });
 
 /*jQuery.ajaxSetup({
   success: function(){menu_stick(); create_slider();}
 });*/
-jQuery.ajaxSetup({
-  success: function(){update_links();}
-})
-function update_links()
-{
-  var links = '#modal_container .pager.pagenav li > a';
-  jQuery(links).on('click', open_overlay);
-  jQuery(links).removeAttr('rel');
-  {
-  }
-  jQuery(links).attr('href', function (i, origValue) {
-    return origValue + '?tmpl=component';
-  });
-  SqueezeBox.assign($$(links), {
-    parse: 'rel'
-  });
-}
 
+/*
+jQuery.ajaxSetup({
+  success: function()
+  {
+	update_links(".pager.pagenav li > a");
+	jQuery("#sbox-content > * ").css("opacity" , "1"); 
+  }
+})
+*/
+
+jQuery(document).ajaxComplete(function(event, jqXHR, settings)
+{
+   jQuery("#sbox-content > * ").css("opacity" , "1"); 
+	update_links(".pager.pagenav li > a");
+});
+function update_links(target)
+{
+  var links = target;
+  jQuery("#modal_container, .page-header").on("click" , target ,
+  function(event) 
+  {
+	var link = jQuery(this).attr("href")+ "?tmpl=component";    
+	event.preventDefault(); 
+	if(jQuery(this).attr("rel") == "prev")
+	{
+		jQuery("#sbox-window .item-page > * > *:not(.parent-category-name):not(.category-name)").css("transform" , "translateX(-110%)");
+		//jQuery("#sbox-window .item-page").css("filter" , "blur(1px)");
+		jQuery("#sbox-window .pager.pagenav").css("visibility" , "hidden");		 		
+	}
+	else
+	{
+		jQuery("#sbox-window .item-page > * > *:not(.parent-category-name):not(.category-name)").css("transform", "translateX(110%)");
+		//jQuery("#sbox-window .item-page").css("filter" , "blur(1px)");
+		jQuery("#sbox-window .pager.pagenav").css("visibility" , "hidden");		
+	}
+//	jQuery.get( link , get_result );
+	jQuery("#sbox-content").load(link, function(){jQuery("#sbox-content > *").css("opacity","1");});               
+  });
+  jQuery(target).on( "click", open_overlay );
+  
+}
+/*$.ajax({
+  url: url,
+  data: data,
+  success: success,
+  dataType: dataType*/
+
+function get_result(data)
+{
+	jQuery( "#sbox-content" ).html( data );
+	update_links(".pager.pagenav li > a");	
+	jQuery("#sbox-content > * ").css("opacity" , "1"); 
+}
 function menu_stick() {
   var start_pos = jQuery('#low-header').offset().top;
   var scrollTimer = null;
